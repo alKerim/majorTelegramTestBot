@@ -34,7 +34,7 @@ class Commands extends \TelegramBot\Plugin
                     'inline_keyboard' => [
                         [
                             [
-                                'text' => 'Order Food',
+                                'text' => 'Order Weed',
                                 'web_app' => [
                                     'url' => $_ENV['RESOURCE_BASE_URL']
                                 ],
