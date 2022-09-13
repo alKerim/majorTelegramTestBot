@@ -56,7 +56,7 @@ class Commands extends \TelegramBot\Plugin
                             [
                                 'text' => 'Test',
                                 'web_app' => [
-                                    'url' => $_ENV['RESOURCE_BASE_URL'] . '/demo.html'
+                                    'url' => $_ENV['RESOURCE_BASE_URL'] . '/index.html'
                                 ],
                             ],
                         ]
