@@ -29,12 +29,12 @@ class Commands extends \TelegramBot\Plugin
             yield Request::sendMessage([
                 'chat_id' => $message->getChat()->getId(),
                 'parse_mode' => ParseMode::MARKDOWN,
-                'text' => "*Let's get started* 🍁 \n\nPlease tap the button below to order your weed!",
+                'text' => "*Let's get started* 🍄🍯 \n\nPlease tap the button below to order your honey!",
                 'reply_markup' => [
                     'inline_keyboard' => [
                         [
                             [
-                                'text' => 'Order Weed',
+                                'text' => 'Order Honey',
                                 'web_app' => [
                                     'url' => $_ENV['RESOURCE_BASE_URL']
                                 ],
