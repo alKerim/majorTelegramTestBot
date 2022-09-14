@@ -529,7 +529,7 @@
 <script>
 	const basePath = window.location.pathname.split('/').slice(0, -2).join('/');
     Cafe.init({
-        "apiUrl": `${basePath}/service.php`,
+        "apiUrl": `${basePath}/index.php`,
         "userId": 0,
         "userHash": null
     });
