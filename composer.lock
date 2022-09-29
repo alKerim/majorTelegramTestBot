@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccea5a7949ba5394059797b470b93ed6",
+    "content-hash": "66bdff5b2b3753d601a6a0b6bf089c7b",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -332,6 +332,86 @@
                 }
             ],
             "time": "2022-04-01T07:15:35+00:00"
+        },
+        {
+            "name": "symfony/intl",
+            "version": "v6.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/intl.git",
+                "reference": "9fc07ba57eb33d44c6b3b86b4e1ef927620d1a39"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/intl/zipball/9fc07ba57eb33d44c6b3b86b4e1ef927620d1a39",
+                "reference": "9fc07ba57eb33d44c6b3b86b4e1ef927620d1a39",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "symfony/filesystem": "^5.4|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Intl\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                },
+                {
+                    "name": "Eriksen Costa",
+                    "email": "eriksen.costa@infranology.com.br"
+                },
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides a PHP replacement layer for the C intl extension that includes additional data from the ICU library",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "i18n",
+                "icu",
+                "internationalization",
+                "intl",
+                "l10n",
+                "localization"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/intl/tree/v6.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-04-12T16:22:53+00:00"
         },
         {
             "name": "symfony/mime",
@@ -972,12 +1052,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/utilities-php/auth.git",
-                "reference": "281338a5c49d3da19002b75290c4cfe7afd150f6"
+                "reference": "3d95e2ab045e666e710ff4847b5b74b26573fa78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/utilities-php/auth/zipball/281338a5c49d3da19002b75290c4cfe7afd150f6",
-                "reference": "281338a5c49d3da19002b75290c4cfe7afd150f6",
+                "url": "https://api.github.com/repos/utilities-php/auth/zipball/3d95e2ab045e666e710ff4847b5b74b26573fa78",
+                "reference": "3d95e2ab045e666e710ff4847b5b74b26573fa78",
                 "shasum": ""
             },
             "require": {
@@ -1011,7 +1091,7 @@
                 "issues": "https://github.com/utilities-php/utilities-php/issues",
                 "source": "https://github.com/utilities-php/utilities-php"
             },
-            "time": "2022-09-11T16:39:13+00:00"
+            "time": "2022-09-20T13:20:41+00:00"
         },
         {
             "name": "utilities-php/common",
@@ -1019,12 +1099,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/utilities-php/common.git",
-                "reference": "bbb001aa9464617c3521ad4707c9817290645f3d"
+                "reference": "111ccf7487e011e5222a03c4ef9f0365e4e58d8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/utilities-php/common/zipball/bbb001aa9464617c3521ad4707c9817290645f3d",
-                "reference": "bbb001aa9464617c3521ad4707c9817290645f3d",
+                "url": "https://api.github.com/repos/utilities-php/common/zipball/111ccf7487e011e5222a03c4ef9f0365e4e58d8e",
+                "reference": "111ccf7487e011e5222a03c4ef9f0365e4e58d8e",
                 "shasum": ""
             },
             "require": {
@@ -1034,6 +1114,7 @@
                 "nxp/math-executor": "^2.3.0",
                 "php": ">=8.0",
                 "shahradelahi/easy-http": "^v1.2.0",
+                "utilities-php/validator": "*",
                 "vlucas/phpdotenv": "^v5.4.1"
             },
             "default-branch": true,
@@ -1047,6 +1128,16 @@
             "license": [
                 "MIT"
             ],
+            "authors": [
+                {
+                    "name": "LiteHex",
+                    "email": "opensource@litehex.com"
+                },
+                {
+                    "name": "Shahrad Elahi",
+                    "email": "shahrad@litehex.com"
+                }
+            ],
             "description": "A common set of utilities for PHP",
             "homepage": "https://github.com/utilities-php/utilities-php",
             "keywords": [
@@ -1059,20 +1150,20 @@
                 "issues": "https://github.com/utilities-php/utilities-php/issues",
                 "source": "https://github.com/utilities-php/utilities-php"
             },
-            "time": "2022-09-11T16:39:17+00:00"
+            "time": "2022-09-24T14:44:29+00:00"
         },
         {
-            "name": "utilities-php/router",
+            "name": "utilities-php/routing",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/utilities-php/router.git",
-                "reference": "a68943dc7591e1327bf3f49e267b91ad4448acc0"
+                "url": "https://github.com/utilities-php/routing.git",
+                "reference": "99032dfb2a431bbea6ac84a0397fc04e321e7cae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/utilities-php/router/zipball/a68943dc7591e1327bf3f49e267b91ad4448acc0",
-                "reference": "a68943dc7591e1327bf3f49e267b91ad4448acc0",
+                "url": "https://api.github.com/repos/utilities-php/routing/zipball/99032dfb2a431bbea6ac84a0397fc04e321e7cae",
+                "reference": "99032dfb2a431bbea6ac84a0397fc04e321e7cae",
                 "shasum": ""
             },
             "require": {
@@ -1086,18 +1177,28 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Utilities\\Router\\": "src/"
+                    "Utilities\\Routing\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
+            "authors": [
+                {
+                    "name": "LiteHex",
+                    "email": "opensource@litehex.com"
+                },
+                {
+                    "name": "Shahrad Elahi",
+                    "email": "shahrad@litehex.com"
+                }
+            ],
             "description": "Router for PHP",
             "homepage": "https://github.com/utilities-php/utilities-php",
             "keywords": [
                 "php",
-                "router",
+                "routing",
                 "utilities"
             ],
             "support": {
@@ -1105,7 +1206,72 @@
                 "issues": "https://github.com/utilities-php/utilities-php/issues",
                 "source": "https://github.com/utilities-php/utilities-php"
             },
-            "time": "2022-09-12T09:04:22+00:00"
+            "time": "2022-09-21T08:23:20+00:00"
+        },
+        {
+            "name": "utilities-php/validator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/utilities-php/validator.git",
+                "reference": "ef79c1399d78bc328a6d8ccff32531fdf26c8cf6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/utilities-php/validator/zipball/ef79c1399d78bc328a6d8ccff32531fdf26c8cf6",
+                "reference": "ef79c1399d78bc328a6d8ccff32531fdf26c8cf6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "symfony/intl": "^v6.1.0",
+                "utilities-php/common": "*"
+            },
+            "require-dev": {
+                "fakerphp/faker": "^v1.20.0",
+                "utilities-php/database": "*"
+            },
+            "suggest": {
+                "fakerphp/faker": "Required to use the eloquent factory builder (^1.20.0).",
+                "symfony/intl": "Required to use the eloquent factory builder (^v6.1.0)."
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "helper.php"
+                ],
+                "psr-4": {
+                    "Utilities\\Validator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "LiteHex",
+                    "email": "opensource@litehex.com"
+                },
+                {
+                    "name": "Shahrad Elahi",
+                    "email": "shahrad@litehex.com"
+                }
+            ],
+            "description": "Validator utility for PHP",
+            "homepage": "https://github.com/utilities-php/utilities-php",
+            "keywords": [
+                "php",
+                "utilities",
+                "validator"
+            ],
+            "support": {
+                "docs": "https://github.com/utilities-php/utilities-php",
+                "issues": "https://github.com/utilities-php/utilities-php/issues",
+                "source": "https://github.com/utilities-php/utilities-php"
+            },
+            "time": "2022-09-26T17:51:12+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1191,12 +1357,14 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "utilities-php/routing": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
